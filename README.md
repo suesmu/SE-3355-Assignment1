@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# E-Commerce Web App
 
-## Getting Started
+An interactive e-commerce website built with Next.js 15, styled with custom CSS, and state-managed via Redux Toolkit. This project simulates a modern online shopping experience with dynamic API usage and responsive UI/UX design.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+-Responsive Sticky Navbar  
+  Colorful accent line, responsive layout. On larger screens: full horizontal menu. On mobile: hamburger menu opens and closes the full menu smoothly.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+-Dropdown Menu Support 
+  Submenus appear on hover (desktop) or click (mobile) for categories like "Sofra" → "Yemek Takımları".
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+-Main Slider (Deal of the Day)
+  Large rotating slider with clickable images linking to external URLs. Includes auto-slide and manual navigation buttons.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+-Electronics Deals Slider  
+  Compact, rotating slider showcasing selected electronic items, dynamically fetched from the database.
 
-## Learn More
+-Personalized Product Section ("Sana Özel Ürünler")  
+  Products are dynamically fetched from `/api/recommendations`, displayed in card format, and redirect to detail pages.
 
-To learn more about Next.js, take a look at the following resources:
+-Visited Products 
+  Previously viewed products tracked and displayed using Redux. Cards update instantly as users explore items.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+-Quick Links (Campaign Section) 
+  Visually rich campaign cards with images and labels, sourced from SQLite and rendered in a flexible grid.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+-Product Detail Page  
+  Dynamic route `/products/[id]` loads individual product content from the database using API routes.
 
-## Deploy on Vercel
+-Local SQLite Database 
+  Connected via Next.js API routes (`/api/...`), powering all product and campaign data dynamically.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+-Fully Mobile Compatible 
+  All sections are responsive. Layout adapts across screen sizes using `grid` and `flex` with media queries.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Technologies Used
+
+Technologies Used
+Next.js 15
+React
+Redux Toolkit
+SQLite (via API routes)
+CSS Modules / Global Styles
+Resimlink.com (for CDN image hosting)
+
+
+## Live Preview
